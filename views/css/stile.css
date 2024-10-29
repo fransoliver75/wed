@@ -1,0 +1,193 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#error-message-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fde6e6; /* Fondo rosado claro */
+    color: #b00020; /* Texto rojo similar al de la imagen */
+    border-left: 4px solid #b00020; /* Borde izquierdo rojo */
+    padding: 10px 15px;
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+#error-message-box h4 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 15px;
+    color: #b00020; /* Rojo fuerte para el título */
+}
+
+#error-message-box p {
+    margin: 0;
+    font-size: 13px;
+    color: #b00020; /* Rojo fuerte para el texto */
+}
+
+
+body {
+    background-image: url("https://plus.unsplash.com/premium_photo-1673770408482-075e320ae37f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 350px;
+    padding: 40px 20px;
+    margin: 100px auto; /* Centrado horizontalmente */
+    background-color: rgb(248, 250, 249); /* Fondo oscuro con transparencia */
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.726); /* Sombra intensa con desenfoque */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque detrás del cuadro */
+    text-align: center;
+    color: #080808;
+}
+
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+label {
+    display: block; /* Asegura que la etiqueta sea un bloque por separado */
+    font-size: 14px;
+    color: #0e0d0d;
+    text-align: left;
+    margin-bottom: 8px; /* Espacio entre el label y el input */
+    width: 100%;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* donde se escribe su fondo */
+    border-radius: 25px;
+    background: rgba(15, 15, 15, 0.1);
+    color: #111111;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid #363636;
+}
+
+input[type="submit"] {
+    width: 50%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(2, 145, 97);
+    color: #fcfbfb;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #40ac9d;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+input[type="submit"]:active {
+    background-color: #050505;
+}
+
+form .checkbox-label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #080808;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+form .checkbox-label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form a {
+    color: #080808;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+    
+}
+
+form a:hover {
+    color: #070707;
+}
+
+footer {
+    margin-top: 20px;
+    color: #131212;
+    font-size: 14px;
+}
+
+footer a {
+    color: #0e0d0d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #0e0d0d;
+}
+
+
+.icon-title i {
+    margin-right: 7px; /* Ajusta el espacio entre el ícono y el texto */
+    font-size: 3rem; /* Tamaño del ícono */
+}
+
+/*para botones*/
+
+
+.btn-regresar {
+    background-color: rgb(37, 39, 161); /* Color de fondo verde */
+    color: white; /* Texto en blanco */
+    border: none;
+    padding: 15px 20; /* Relleno vertical para centrar el texto */
+    margin-top: 10px; /* Espacio entre el botón 'Actualizar' y 'Regresar Login' */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de texto */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Mantener el ancho del botón al 50% del contenedor */
+    text-align: center; /* Centrar el texto */
+    display: inline-block;
+}
+
+.btn-regresar:hover {
+    background-color: #2724d6; /* Color más claro al pasar el mouse */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+}
+
+.btn-regresar:active {
+    background-color: #3622a5; /* Color más oscuro al hacer clic */
+}
